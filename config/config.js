@@ -1,4 +1,4 @@
-exports.default = 
+module.exports = 
 {
   "development": {
     "username": "postgres",

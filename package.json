@@ -5,6 +5,7 @@
   "license": "MIT",
   "dependencies": {
     "express": "^4.14.1",
+    "mysql": "^2.13.0",
     "pg": "^6.1.2",
     "pg-hstore": "^2.3.2",
     "sequelize": "^3.30.2"
