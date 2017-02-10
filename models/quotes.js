@@ -1,6 +1,6 @@
 'use strict';
 module.exports = function(sequelize, DataTypes) {
-  var Quotes = sequelize.define('Quotes', {
+  var quotes = sequelize.define('quotes', {
     quote: DataTypes.TEXT
   }, {
     classMethods: {
@@ -9,5 +9,5 @@ module.exports = function(sequelize, DataTypes) {
       }
     }
   });
-  return Quotes;
+  return quotes;
 };

@@ -4,7 +4,7 @@ const app = express()
 const models = require('./models')
 
 app.get('/', (req, res) => {
-  models.Quotes.findOne()
+  models.quotes.findOne()
     .then((quote) => {
 
       res.send(quote)
