@@ -11,6 +11,7 @@
     "sequelize": "^3.30.2"
   },
   "scripts": {
-    "start": "node server.js"
+    "start": "node server.js",
+    "prestart": "sequelize db:migrate"
   }
 }
