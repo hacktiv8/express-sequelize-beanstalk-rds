@@ -17,7 +17,7 @@ module.exports =
   "production": {
     "username": process.env.RDS_USERNAME || '',
     "password": process.env.RDS_PASSWORD || '',
-    "database": "startup_quotes",
+    "database": process.env.RDS_DB_NAME || "startup_quotes",
     "host": process.env.RDS_HOSTNAME || '',
     "port": process.env.RDS_PORT || '5432',
     "dialect": "postgres"
