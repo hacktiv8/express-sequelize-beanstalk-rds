@@ -4,9 +4,13 @@ const app = express()
 const models = require('./models')
 
 app.get('/', (req, res) => {
-  models.newquotes.findOne().then((quote) => {
-    res.send(quote)
-  })
+  models.newquotes.findOne()
+    .then((quote) => {
+      res.send(quote)
+    })
+    .catch((err) => {
+      res.send(err)
+    })
 })
 
 const port = process.env.PORT || 3000
