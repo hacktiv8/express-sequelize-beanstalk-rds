@@ -1,14 +1,13 @@
 const express = require('express')
 const app = express()
+const models = require('./models')
 
 const models = require('./models')
 
 app.get('/', (req, res) => {
-  models.quotes.findOne()
-    .then((quote) => {
-
-      res.send(quote)
-    })
+  models.newquotes.findOne().then((quote) => {
+    res.send(quote)
+  })
 })
 
 const port = process.env.PORT || 3000
