@@ -15,11 +15,11 @@ module.exports =
     "dialect": "postgres"
   },
   "production": {
-    "username": process.env.RDS_USERNAME,
-    "password": process.env.RDS_PASSWORD,
-    "database": "startup_quotes",
-    "host": process.env.RDS_HOSTNAME,
-    "port": process.env.RDS_PORT,
+    "username": process.env.RDS_USERNAME || null,
+    "password": process.env.RDS_PASSWORD || null,
+    "database": "startup_quotes" || null,
+    "host": process.env.RDS_HOSTNAME || null,
+    "port": process.env.RDS_PORT || null,
     "dialect": "postgres"
   }
 }
