@@ -1,6 +1,5 @@
 const express = require('express')
 const app = express()
-const models = require('./models')
 
 const models = require('./models')
 
